@@ -1,9 +1,13 @@
 {
     "name": "iqbalhasandev/sqlite-cache",
-    "description": "",
+    "description": "The Missing Sqlite Cache Driver Package.You can easily use Sqlite Database as Cache Driver through this package",
     "type": "library",
     "keywords": [
-        "package"
+        "package",
+        "library",
+        "Plugin",
+        "Cache Driver",
+        "Sqlite Cache Driver"
     ],
     "license": "MIT",
     "authors": [
