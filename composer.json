@@ -1,0 +1,30 @@
+{
+    "name": "iqbalhasandev/sqlite-cache",
+    "description": "",
+    "type": "library",
+    "keywords": [
+        "package"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "IQBAL HASAN",
+            "email": "iqbalhasan.dev@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Iqbal\\SqliteCache\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Iqbal\\SqliteCache\\SqliteCacheProvider"
+            ],
+            "aliases": {}
+        }
+    }
+}
