@@ -4,6 +4,8 @@ namespace Iqbal\SqliteCache;
 
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\ServiceProvider;
+use Iqbal\SqliteCache\commands\SqliteCacheTable;
+use Iqbal\SqliteCache\commands\SqliteCacheInstall;
 
 class SqliteCacheProvider extends ServiceProvider
 {
@@ -16,8 +18,8 @@ class SqliteCacheProvider extends ServiceProvider
     {
         if ($this->app->runningInConsole()) {
             $this->commands([
-                Commands\SqliteCacheInstall::class,
-                Commands\SqliteCacheTable::class
+                SqliteCacheInstall::class,
+                SqliteCacheTable::class
             ]);
         }
     }
